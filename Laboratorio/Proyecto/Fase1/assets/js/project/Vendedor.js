@@ -6,7 +6,8 @@
  * Desarrollador Por: Erick Estrada Aroche            *
  * GIT: estrada-usac                                  *
  * ************************************************** */
-const Empleado = require('./Empleado.js');
+//const Empleado = require('./Empleado.js');
+import {Empleado} from './Empleado.js';
 
 class Vendedor extends Empleado {
 
@@ -40,4 +41,4 @@ class Vendedor extends Empleado {
 
 }
 
-module.exports = Vendedor;
+export {Vendedor};

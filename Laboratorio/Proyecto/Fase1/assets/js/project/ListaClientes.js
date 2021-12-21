@@ -6,7 +6,7 @@
  * Desarrollador Por: Erick Estrada Aroche            *
  * GIT: estrada-usac                                  *
  * ************************************************** */
-const Cliente = require('./Cliente.js');
+import {Cliente} from './Cliente.js';
 
 class ListaClientes {
 
@@ -100,6 +100,9 @@ class ListaClientes {
    }
 
 }
+
+export {ListaClientes};
+
 /*
 // Pruebas
 const Lista1 = new ListaClientes();

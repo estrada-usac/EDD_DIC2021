@@ -79,4 +79,5 @@ class Empleado {
 
 }
 
-module.exports = Empleado;
+export {Empleado};
+//module.exports = Empleado;

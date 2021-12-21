@@ -5,8 +5,8 @@
  * Desarrollador Por: Erick Estrada Aroche            *
  * GIT: estrada-usac                                  *
  * ************************************************** */
-const Usuario = require('./Usuario.js');
-const Vendedor = require('./Vendedor.js');
+import {Usuario} from './Usuario.js';
+import {Vendedor} from './Vendedor.js';
 
 class ArbolUsuario {
 
@@ -141,10 +141,25 @@ class ArbolUsuario {
    }
 
    // Aquí Crear Método Buscar Nodo En Árbol Para Sesion
+   buscar(id, pass, raiz_actual) {
+
+      if (raiz_actual != null ) {
+
+         this.buscar(id, pass, raiz_actual.izq);
+         if ((parseInt(id, 10) === raiz_actual.id) && (pass === raiz_actual.contrasena)) {
+            return 1; // Encontrado
+         }
+         this.buscar(id, pass, raiz_actual.der);
+
+      }else {
+         return 0; // No Encontrado
+      }
+
+   }
 
 }
 
-module.exports = ArbolUsuario;
+export {ArbolUsuario};
 
 /*
 // Pruebas

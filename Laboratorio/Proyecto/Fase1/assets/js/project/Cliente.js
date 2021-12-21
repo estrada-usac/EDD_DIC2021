@@ -64,4 +64,4 @@ class Cliente {
 
 }
 
-module.exports = Cliente;
+export {Cliente};

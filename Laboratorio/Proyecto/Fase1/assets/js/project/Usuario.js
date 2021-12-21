@@ -5,7 +5,8 @@
  * Desarrollador Por: Erick Estrada Aroche            *
  * GIT: estrada-usac                                  *
  * ************************************************** */
-const Vendedor = require('./Vendedor.js');
+import {Vendedor} from './Vendedor.js';
+//const Vendedor = require('./Vendedor.js');
 // Aqui Importar Demás Roles De Empleados
 
 class Usuario {
@@ -79,4 +80,4 @@ class Usuario {
 
 }
 
-module.exports = Usuario;
+export {Usuario};
