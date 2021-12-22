@@ -1,7 +1,7 @@
 import {Vendedor} from './project/Vendedor.js';
 import {ArbolUsuario} from './project/ArbolUsuario.js';
 
-
+/* Pruebas
 const vendedor1 = new Vendedor(24341,'Erick',25,'correo0','pass','Vendedor','LISTA','Calendar');
 const vendedor2 = new Vendedor(20160,'José',20,'correo0','pass1','Vendedor','LISTA','Calendar');
 
@@ -11,7 +11,7 @@ usuarios.insertar(vendedor2);
 
 console.log(usuarios.raiz.id + ' - ' + usuarios.raiz.contrasena);
 console.log(usuarios.raiz.izq.id + ' - ' + usuarios.raiz.izq.contrasena);
-
+*/
 
 function sigIn() {
    // Capturar Valor De ID y De Contraseña Ingresado Por Usuario
